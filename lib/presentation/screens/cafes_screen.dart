@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class CafesScreen extends StatelessWidget {
   const CafesScreen({super.key});
 
-  // Mock data for cafes
   final List<Map<String, dynamic>> cafeList = const [
     {
       'name': 'The Daily Grind',
@@ -39,7 +38,7 @@ class CafesScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      backgroundColor: const Color(0xFFF8E0D0), // Light creamy coffee
+      backgroundColor: const Color(0xFFF8E0D0),
       body: ListView.builder(
         padding: const EdgeInsets.all(16.0),
         itemCount: cafeList.length,
@@ -63,7 +62,6 @@ class CafesScreen extends StatelessWidget {
                     cafe['image'],
                     height: 150,
                     fit: BoxFit.cover,
-                    // Handle image errors gracefully
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
                         height: 150,

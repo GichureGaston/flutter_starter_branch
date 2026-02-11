@@ -29,11 +29,11 @@ class MockaApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown.shade600),
             secondaryHeaderColor: Colors.brown.shade600,
             scaffoldBackgroundColor: const Color(0xFFF8E0D0),
-            cardColor: Colors.brown.withOpacity(0.15),
+            cardColor: Colors.brown.withValues(alpha: 0.15),
             unselectedWidgetColor: Colors.grey[400],
 
             bottomAppBarTheme: BottomAppBarThemeData(
-              color: Colors.white.withOpacity(0.15),
+              color: Colors.white.withValues(alpha: 0.15),
             ),
 
             appBarTheme: const AppBarTheme(
