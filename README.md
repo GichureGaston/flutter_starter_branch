@@ -1,18 +1,22 @@
-This is the starter template for the GDG workshop on **Flutter BLoC and Local Persistence**. This branch contains the project structure, dependencies, and asset configurations required to begin the implementation.
+Markdown
+
+# Mocka: Coffee Selection App (Starter Branch)
+
+Welcome to the Mocka workshop. I have designed this starter template to give us a solid foundation. You will find the project structure, dependencies, and asset configurations already in place so we can focus entirely on implementation.
 
 ---
 
-## Workshop Objectives
+## My Objectives for You
 
-1. **Local Data Persistence**: Implement secure storage for user credentials using `flutter_secure_storage`.
-2. **Business Logic**: Build a `LoginBloc` to handle authentication states and artificial processing delays.
-3. **UI Development**: Create a responsive 2-column coffee menu grid using advanced styling and Glassmorphism.
+1. **Secure Local Persistence**: I want you to implement secure storage for user credentials using `flutter_secure_storage`.
+2. **Business Logic**: We will build a `LoginBloc` together to handle authentication states and manage artificial processing delays.
+3. **UI Development**: I will guide you through creating a responsive 2-column coffee menu grid using modern Glassmorphism techniques.
 
 ---
 
-## Project Structure
+## How I've Structured the Project
 
-The repository is organized following Clean Architecture principles:
+I have organized the repository following Clean Architecture principles. Please stick to these folders as we build:
 
 ```text
 lib/
@@ -28,7 +32,7 @@ lib/
 Getting Started
 1. Environment Check
 
-Ensure your environment meets the following requirements:
+Before we start, ensure your environment matches mine:
 
     Flutter SDK: 3.27.0 or higher
 
@@ -36,41 +40,39 @@ Ensure your environment meets the following requirements:
 
 2. Installation
 
-Run the following command in your terminal to fetch the necessary packages:
+First, I need you to run this command in your terminal to fetch our packages:
 Bash
 
 flutter pub get
 
 3. Assets
 
-The assets/ folder contains the coffee images and icons required for the UI. These are already registered in the pubspec.yaml file.
-Todo List for the Workshop
-Phase 1: Data Layer
+I have already added the coffee images and icons in the assets/ folder and registered them in the pubspec.yaml file for you.
+Your Todo List for Today
+Phase 1: The Data Layer
 
-    [ ] Complete the AuthRepository to interface with SecureStorage.
+    [ ] Complete the AuthRepository so it can talk to SecureStorage.
 
-    [ ] Implement password persistence and validation logic.
+    [ ] Implement the logic I've outlined for password persistence and validation.
 
-Phase 2: Logic Layer
+Phase 2: The Logic Layer (The Brain)
 
-    [ ] Define LoginEvent for login and logout actions.
+    [ ] Define the LoginEvent classes for login and logout actions.
 
-    [ ] Define LoginState for initial, loading, success, and failure states.
+    [ ] Set up your LoginState to handle initial, loading, success, and failure scenarios.
 
-    [ ] Implement the on<LogInRequired> handler in LoginBloc.
+    [ ] Implement the on<LogInRequired> handler inside your LoginBloc.
 
-Phase 3: Presentation Layer
+Phase 3: The Presentation Layer
 
-    [ ] Connect the UI to the BLoC using BlocProvider and BlocBuilder.
+    [ ] Connect your UI to the BLoC using a BlocProvider and BlocBuilder.
 
-    [ ] Build the CoffeeCard widget using BoxDecoration and withValues().
+    [ ] Build the CoffeeCard widget using BoxDecoration and the new withValues() method.
 
-    [ ] Implement the GridView.builder on the Home Screen.
+    [ ] Implement the GridView.builder on our Home Screen.
 
-Helpful Commands
+Commands You'll Need
 
-    Run the app: flutter run
+    To run the app: flutter run
 
-    Clean the build: flutter clean
-
-    Generate code (if needed): flutter pub run build_runner build
+    To clean the build: flutter clean
