@@ -1,4 +1,3 @@
-Markdown
 
 # Mocka: Coffee Selection App (Starter Branch)
 
